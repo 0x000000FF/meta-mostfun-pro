@@ -1,0 +1,13 @@
+[Unit]
+Description=service for mount loop device for updating
+StopWhenUnneeded=false
+
+[Service]
+Type=simple
+ExecStart=/etc/mountupdate.sh
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target
