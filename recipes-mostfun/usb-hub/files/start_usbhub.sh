@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo 82 > /sys/class/gpio/export                                                                                      
 echo mode0 > /sys/kernel/debug/gpio_debug/gpio82/current_pinmux
 echo high > /sys/class/gpio/gpio82/direction

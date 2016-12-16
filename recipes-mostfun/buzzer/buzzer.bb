@@ -10,6 +10,8 @@ LICENSE = "CLOSED"
 PV = "0.0"
 PR = "r0"
 
+RDEPENDS_${PN} += "mraa"
+
 S = "${WORKDIR}"
 
 #FILESDIR = "${FILE_DIRNAME}/files/"

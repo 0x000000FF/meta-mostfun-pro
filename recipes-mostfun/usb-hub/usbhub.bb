@@ -3,10 +3,10 @@ SECTION = "userland"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/files/:"
 
-inherit systemd update-alternatives
+RDEPENDS_${PN} += "bash"
 
 SRC_URI = "file://usbhub.service \
-            file://start_usbhub.sh"
+           file://start_usbhub.sh"
 
 LICENSE = "CLOSED"
 
@@ -16,6 +16,7 @@ PR = "r0"
 SYSTEMD_SERVICE_${PN} = "usbhub.service"
 SYSTEMD_AUTO_ENABLE = "enable"
 
+inherit systemd update-alternatives
 S = "${WORKDIR}"
 
 FILESDIR = "${FILE_DIRNAME}/files/"

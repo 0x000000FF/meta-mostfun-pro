@@ -1,6 +1,5 @@
 [Unit]
 Description=enable usb hub
-After=wpa_supplicant.service
 StopWhenUnneeded=false
 
 [Service]

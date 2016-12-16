@@ -15,8 +15,8 @@ SRC_URI = "file://TFT_8340 \
 
 LICENSE = "CLOSED"
 
-PV = "0.6"
-PR = "r4"
+PV = "1.0"
+PR = "r5"
 
 SYSTEMD_SERVICE_${PN} = "TFT_LCD.service"
 SYSTEMD_AUTO_ENABLE = "enable"
