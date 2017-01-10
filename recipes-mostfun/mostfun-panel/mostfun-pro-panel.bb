@@ -14,6 +14,10 @@ RDEPENDS_${PN} += "decode"
 RDEPENDS_${PN} += "marlin"
 RDEPENDS_${PN} += "mergeini"
 RDEPENDS_${PN} += "gcode-analyzer"
+RDEPENDS_${PN} += "mdns-server"
+RDEPENDS_${PN} += "clipper"
+RDEPENDS_${PN} += "logger"
+RDEPENDS_${PN} += "mergeini"
 
 SRC_URI = "file://mostfun.des3 \
            file://panel_install.sh \
@@ -22,8 +26,8 @@ SRC_URI = "file://mostfun.des3 \
 
 LICENSE = "CLOSED"
 
-PV = "1.57.1"
-PR = "rfd05756"
+PV = "1.57.6"
+PR = "r25c27a5"
 
 SYSTEMD_SERVICE_${PN} = "panel_install.service"
 SYSTEMD_AUTO_ENABLE = "enable"

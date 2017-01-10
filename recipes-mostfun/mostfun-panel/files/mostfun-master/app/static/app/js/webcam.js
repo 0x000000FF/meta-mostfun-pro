@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$("#webcam").on("show.bs.modal",function(){console.log(window.location.hostname),document.getElementById("camframe").src="http://"+window.location.hostname+"/webcam"}),$("#webcam").on("hidden.bs.modal",function(){document.getElementById("camframe").src="",document.getElementById("cam_img").src=""})});

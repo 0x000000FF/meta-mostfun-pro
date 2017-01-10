@@ -1,0 +1,15 @@
+[Unit]
+Description=mdns service for mostfun pro
+Requires=sys-subsystem-net-devices-wlan0.device
+After=sys-subsystem-net-devices-wlan0.device
+StopWhenUnneeded=false
+
+[Service]
+Type=simple
+ExecStart=/etc/mdns/mostfun-mdns.sh
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

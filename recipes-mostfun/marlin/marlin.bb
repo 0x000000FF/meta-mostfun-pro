@@ -5,8 +5,8 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files/:"
 
 LICENSE = "CLOSED"
 
-PV = "1.23"
-PR = "r17"
+PV = "1.26"
+PR = "r20"
 
 RDEPENDS_${PN} = "systemd"
 RDEPENDS_${PN} += "avr-isp"

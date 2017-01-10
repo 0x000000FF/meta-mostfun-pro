@@ -7,7 +7,7 @@ SRC_URI = "file://main.py"
 
 LICENSE = "CLOSED"
 
-PV = "0.0"
+PV = "0.1"
 PR = "r0"
 
 S = "${WORKDIR}"
@@ -15,10 +15,10 @@ S = "${WORKDIR}"
 #FILESDIR = "${FILE_DIRNAME}/files/"
 
 FILES_${PN}  += " \
- /mostfun/mergeini/main.py\
+ /mostfun/merge-ini/main.py\
 "
 
 do_install() {
-        install -v -d  ${D}/mostfun/mergeini
-        install -m 0755 main.py ${D}/mostfun/mergeini/
+        install -v -d  ${D}/mostfun/merge-ini
+        install -m 0755 main.py ${D}/mostfun/merge-ini/
 }

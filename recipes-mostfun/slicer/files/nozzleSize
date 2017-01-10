@@ -1,0 +1,131 @@
+nozzleSize
+layerThickness
+initialLayerThickness
+filamentDiameter
+filamentFlow
+layer0extrusionWidth
+extrusionWidth
+insetCount
+downSkinCount
+upSkinCount
+skirtDistance
+skirtLineCount
+skirtMinLength
+initialSpeedupLayers
+initialLayerSpeed
+printSpeed
+inset0Speed
+insetXSpeed
+moveSpeed
+fanFullOnLayerNr
+sparseInfillLineDistance
+infillOverlap
+infillSpeed
+infillPattern
+skinSpeed
+perimeterBeforeInfill
+supportType
+supportAngle
+supportEverywhere
+supportLineDistance
+supportXYDistance
+supportZDistance
+supportExtruder
+retractionAmount
+retractionAmountPrime
+retractionSpeed
+retractionAmountExtruderSwitch
+retractionMinimalDistance
+minimalExtrusionBeforeRetraction
+retractionZHop
+enableCombing
+enableOozeShield
+wipeTowerSize
+multiVolumeOverlap
+objectPosition.X
+posx
+objectPosition.Y
+posy
+objectSink
+autoCenter
+raftMargin
+raftLineSpacing
+raftBaseThickness
+raftBaseLinewidth
+raftInterfaceThickness
+raftInterfaceLinewidth
+raftInterfaceLineSpacing
+raftAirGap
+raftAirGapLayer0
+raftBaseSpeed
+raftFanSpeed
+raftSurfaceThickness
+raftSurfaceLinewidth
+raftSurfaceLineSpacing
+raftSurfaceLayers
+raftSurfaceSpeed
+minimalLayerTime
+minimalFeedrate
+coolHeadLift
+fanSpeedMin
+fanSpeedMax
+fixHorrible
+spiralizeMode
+simpleMode
+gcodeFlavor
+extruderOffset[0].X
+extruderOffset[0].Y
+extruderOffset[1].X
+extruderOffset[1].Y
+extruderOffset[2].X
+extruderOffset[2].Y
+extruderOffset[3].X
+extruderOffset[3].Y
+extruderOffset[4].X
+extruderOffset[4].Y
+extruderOffset[5].X
+extruderOffset[5].Y
+extruderOffset[6].X
+extruderOffset[6].Y
+extruderOffset[7].X
+extruderOffset[7].Y
+extruderOffset[8].X
+extruderOffset[8].Y
+extruderOffset[9].X
+extruderOffset[9].Y
+extruderOffset[10].X
+extruderOffset[10].Y
+extruderOffset[11].X
+extruderOffset[11].Y
+extruderOffset[12].X
+extruderOffset[12].Y
+extruderOffset[13].X
+extruderOffset[13].Y
+extruderOffset[14].X
+extruderOffset[14].Y
+extruderOffset[15].X
+extruderOffset[15].Y
+M109 S210     ;Heatup to 210C
+G21           ;metric values
+G90           ;absolute positioning
+G28           ;Home
+G1 Z15.0 F300 ;move the platform down 15mm
+G92 E0        ;zero the extruded length
+G1 F200 E5    ;extrude 5mm of feed stock
+G92 E0        ;zero the extruded length again
+M104 S0                     ;extruder heater off
+M140 S0                     ;heated bed heater off (if you have it)
+G91                            ;relative positioning
+G1 E-1 F300                    ;retract the filament a bit before lifting the nozzle, to release some of the pressure
+G1 Z+0.5 E-5 X-20 Y-20 F9000   ;move Z up a bit and retract filament even more
+G28 X0 Y0                      ;move X/Y to min endstops, so the head is out of the way
+M84                         ;steppers off
+G90                         ;absolute positioning
+acceleration
+max_acceleration[0]
+max_acceleration[1]
+max_acceleration[2]
+max_acceleration[3]
+max_xy_jerk
+max_z_jerk
+max_e_jerk

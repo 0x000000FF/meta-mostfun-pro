@@ -1,0 +1,1 @@
+define({LoginContent:{Title:"登录 mostfun 控制台",Password:"密码",InitPassword:"默认密码",RememberMe:"自动登录",Submit:"登录",ErrorMsg:"用户名/密码错误",Camera:"摄像头",Close:"关闭"},AlertBoxError:{LoginError:"密码不正确，请重试",Error404:"404错误，资源未找到"}});
