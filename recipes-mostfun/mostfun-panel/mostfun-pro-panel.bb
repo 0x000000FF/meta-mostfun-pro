@@ -18,6 +18,8 @@ RDEPENDS_${PN} += "mdns-server"
 RDEPENDS_${PN} += "clipper"
 RDEPENDS_${PN} += "logger"
 RDEPENDS_${PN} += "mergeini"
+RDEPENDS_${PN} += "python-requests"
+RDEPENDS_${PN} += "mostfun-update"
 
 SRC_URI = "file://mostfun.des3 \
            file://panel_install.sh \
@@ -26,8 +28,8 @@ SRC_URI = "file://mostfun.des3 \
 
 LICENSE = "CLOSED"
 
-PV = "1.57.7"
-PR = "r0f047e"
+PV = "1.58.0"
+PR = "rb8af54"
 
 SYSTEMD_SERVICE_${PN} = "panel_install.service"
 SYSTEMD_AUTO_ENABLE = "enable"
