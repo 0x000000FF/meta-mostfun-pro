@@ -7,8 +7,8 @@ SRC_URI = "file://gcode_analyzer"
 
 LICENSE = "CLOSED"
 
-PV = "0.0"
-PR = "r1"
+PV = "0.2"
+PR = "r3"
 
 RDEPENDS_${PN} += "qtbase"
 
